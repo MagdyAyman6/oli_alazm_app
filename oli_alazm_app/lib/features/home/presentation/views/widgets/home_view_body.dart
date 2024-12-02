@@ -16,28 +16,26 @@ class HomeViewBody extends StatefulWidget {
 class _HomeViewBodyState extends State<HomeViewBody> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SliderContainer(),
-              SizedBox(
-                height: 8,
-              ),
-              EasyStepperWidget(),
-              SizedBox(
-                height: 5,
-              ),
-              CategoryItemListView(),
-              QuranTrackingCard(),
-              DailyCard(),
-              MuhaffidhonSectionBuilder(),
-              SizedBox(
-                height: 80,
-              ),
-            ],
-          ),
+    return const Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SliderContainer(),
+            SizedBox(
+              height: 8,
+            ),
+            EasyStepperWidget(),
+            SizedBox(
+              height: 5,
+            ),
+            CategoryItemListView(),
+            QuranTrackingCard(),
+            DailyCard(),
+            MuhaffidhonSectionBuilder(),
+            SizedBox(
+              height: 80,
+            ),
+          ],
         ),
       ),
     );

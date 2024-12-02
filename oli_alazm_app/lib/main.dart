@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:oli_alazm_app/core/utils/api_service.dart';
 import 'package:oli_alazm_app/features/home/data/repos/khotab_repo/khotab_repo_impl.dart';
@@ -19,9 +20,9 @@ class OliAlazmApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    //   statusBarColor: Colors.transparent,
-    // ));
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ));
     return MultiBlocProvider(
       providers: [
         BlocProvider(

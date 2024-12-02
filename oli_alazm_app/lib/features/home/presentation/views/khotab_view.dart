@@ -7,10 +7,9 @@ class KhotabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        // backgroundColor: Colors.transparent,
-        body: SafeArea(
-            child: Directionality(
-                textDirection: TextDirection.rtl,
-                child: KhotabViewBody())));
+        backgroundColor: Colors.transparent,
+        body: Directionality(
+            textDirection: TextDirection.rtl,
+            child: KhotabViewBody()));
   }
 }
