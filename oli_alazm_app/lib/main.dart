@@ -39,7 +39,7 @@ class OliAlazmApp extends StatelessWidget {
       ],
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
-        debugShowCheckedModeBanner: true,
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
